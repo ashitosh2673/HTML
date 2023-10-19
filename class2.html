@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Form tag -->
+    <!-- The <form> tag is used to create an HTML form for user input. -->
+    <!-- The <form> element can contain one or more of the following form elements: -->
+    <!-- The action attribute defines the action to be performed when the form is submitted. -->
+    <!-- The method attribute specifies the HTTP method (GET or POST) to be used when submitting the form data. -->
+    <!-- get: Appends the form-data into the URL in name/value pairs
+    Use this method when the form has no side-effects (such as search forms). -->
+    <!-- Use this method when we want to bookmark the page or when we want to send the page to someone else. -->
+    <!-- Do not use this method for handling sensitive information like password etc. -->
+    <!-- Get method is having a limit characters length. Which depends on the browser we use -->
+    <!-- If we want to send large amount of data then we should use post method. -->
+    <!-- post: Sends the form-data as an HTTP post transaction
+    Use this method when the form has side-effects (such as modifying a database or cookie) or when the form contains sensitive information (such as passwords). 
+    We can use this method to send large amount of data. 
+    The data sent to the server with POST is stored in the request body of the HTTP request and we can see it in the browser's developer tools under Network -> Payload tab
+    We can use this method to handle sensitive information like password etc. -->
+
+    <!-- Name : The name attribute specifies a name for the form. This will be unique for each form on a page. -->
+
+    <!-- Target : The target attribute specifies if the submitted result will open in a new browser tab, a frame, or in the current window.
+    The target attribute can have one of the following values:
+    _blank - The response is displayed in a new window or tab
+    _self - The response is displayed in the same frame (this is default)
+    _parent - The response is displayed in the parent frame
+    _top - The response is displayed in the full body of the window -->
+    
+    <!-- Enctype : The enctype attribute specifies how the form-data should be encoded when submitting it to the server (only for method="post").
+    
+    1. enctype="application/x-www-form-urlencoded" : Default. All characters are encoded before sent to server.
+    
+    2. enctype="multipart/form-data" : No characters are encoded. This value is required when you are using forms that have a file upload control/tag
+    
+    3. enctype="text/plain" : Spaces are converted to "+" symbols, but no special characters are encoded. We can use this type for debugging purpose -->
+
+    <!-- The autocomplete attribute specifies whether or not an input field should have autocomplete enabled. We can use On/Off value to enable/disable this feature. -->
+
+    <!-- The novalidate attribute is a boolean attribute. When present, it specifies that the form-data (input) should not be validated when submitted. -->
+    
+    <!-- Example -->
+    <form name="form2" action="index.html" method="get" target="_top" novalidate autocomplete="off">
+        <input type="text" name="first_name" id="first_name" placeholder="First Name"><br><br>
+        <br>
+        <input type="text" name="last_name" id="last_name" placeholder="Last Name"><br><br>
+        <br>
+        <input type="email" name="email" id="email" placeholder="Email"><br><br>
+        <br>
+        <input type="file" name="file" id="file"><br><br>
+        <input type="submit" value="Submit" onclick="">
+    </form>
+
+
+    
+</body>
+</html>
