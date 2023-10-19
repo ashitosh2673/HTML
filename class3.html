@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Table -->
+    <!-- The <table> tag defines an HTML table. -->
+    <!-- An HTML table consists of one <table> element and one or more <tr>, <th>, and <td> elements. -->
+    <!-- The <tr> element defines a table row, the <th> element defines a table header, and the <td> element defines a table cell. -->
+    <!-- An HTML table may also include <caption>, <colgroup>, <thead>, <tfoot>, and <tbody> elements. -->
+    <!-- thead : The <thead> tag is used to group header content in an HTML table.  -->
+    <!-- The <thead> element is used in conjunction with the <tbody> and <tfoot> elements to specify each part of a table (header, body, footer). -->
+    <!-- Browsers can use these elements to enable scrolling of the table body independently of the header and footer. -->
+    <!-- The <thead> element must have one or more <tr> tags inside. -->
+    <!-- Within the <thead> tag, we can use <th> tag to define the header cell of the table. -->
+    <!-- tbody : The <tbody> tag is used to group the body content in an HTML table. -->
+    <!-- The <tbody> element is used in conjunction with the <thead> and <tfoot> elements to specify each part of a table (body, header, footer). -->
+    <!-- Browsers can use these elements to enable scrolling of the table body independently of the header and footer. -->
+    <!-- The <tbody> element must have one or more <tr> tags inside. -->
+    <!-- Within the <tbody> tag, we can use <td> tag to define the body cell of the table. -->
+    <!-- tfoot : The <tfoot> tag is used to group footer content in an HTML table. -->
+    <!-- The <tfoot> element is used in conjunction with the <thead> and <tbody> elements to specify each part of a table (footer, body, header). -->
+    <!-- Browsers can use these elements to enable scrolling of the table body independently of the header and footer. -->
+    <!-- The <tfoot> element must have one or more <tr> tags inside. -->
+    <!-- Within the <tfoot> tag, we can use <td> tag to define the footer cell of the table. -->
+    <!-- caption : The <caption> tag defines a table caption. -->
+    <!-- The <caption> tag must be inserted immediately after the <table> tag. -->
+    <!-- The <caption> tag may contain any valid HTML elements, including <p>. -->
+    <!-- The <caption> tag is necessary to describe the table. -->
+    <!-- The <caption> tag is used to provide a title for a table. -->
+    <!-- The <caption> tag must be the first tag after the <table> tag. -->
+    <!-- The <caption> tag must be the first child of the <table> tag. -->
+    <!-- The <caption> tag must not be empty. -->
+    <!-- The <caption> tag must not contain another <caption> tag. -->
+    <!-- The <caption> tag must not be used if the <table> tag contains only one <thead>, <tbody>, and <tfoot> element. -->
+    <!-- colspan : The colspan attribute defines the number of columns a cell should span. --> -->
+    <!-- The colspan attribute is used to make a cell span many columns. -->
+    <!-- rowspan : The rowspan attribute defines the number of rows a cell should span. 
+    colgroup : The <colgroup> tag specifies a group of one or more columns in a table for formatting. -->
+ 
+<table border="10" width="100%" cellspacing="10px">
+    <caption>Student Details</caption>
+    <colgroup>
+        <col span="2" style="background-color:yellow">
+        <col style="background-color:orange">
+        <col style="background-color:red">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th width="50%">First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>City</th>
+        </tr>        
+    </thead>
+    <tbody style="height: 50px; min-height: 50px; max-height: 50px; overflow: auto;">
+        <tr>
+            <th>#1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jon@example.com</td>
+            <td rowspan="2">Delhi</td>
+        </tr>
+        <tr>
+            <th>#2</th>
+            <td>Johie</td>
+            <td>Doe</td>
+            <td>jhonie@example.com</td>
+            <!-- <td>Delhi</td> -->
+        </tr>
+        <tr>
+            <th>#1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jon@example.com</td>
+            <td rowspan="2">Delhi</td>
+        </tr>
+        <tr>
+            <th>#1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jon@example.com</td>
+            <td rowspan="2">Delhi</td>
+        </tr>
+        <tr>
+            <th>#1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jon@example.com</td>
+            <td rowspan="2">Delhi</td>
+        </tr>
+        <tr>
+            <th>#1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jon@example.com</td>
+            <td rowspan="2">Delhi</td>
+        </tr>
+        <tr>
+            <th>#1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jon@example.com</td>
+            <td rowspan="2">Delhi</td>
+        </tr>        
+    </tbody>
+    
+    <tfoot>
+        <tr>
+            <td colspan="3">This is footer</td>
+        </tr>
+    </tfoot>
+</table>
+
+<!-- code tag -->
+<!-- The <code> tag is a phrase tag. It defines a piece of computer code. -->
+<p> For adding table in border we can use table <code>border: 1px solid red</code> tag property</p>
+
+<br><br>
+<br><br>
+
+<!-- The <kbd> tag is a phrase tag. It defines keyboard input. -->
+
+<p>For Past we can use keyboard <kbd>ctr</kbd>+<kbd>v</kbd> tag property</p>
+
+<!-- The <pre -->
+<!-- The <pre> tag defines preformatted text. -->
+<!-- Text in a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks. -->
+
+    <p>
+        Test
+        test123
+        test3
+    </p>
+<pre>
+                Test
+test123
+test3
+</pre>
+
+
+<!-- The <samp> tag is a phrase tag. It defines sample output from a computer program. -->
+
+<p>Error <samp>Something went wrong</samp> tag property</p>
+
+<!-- The <var> tag is a phrase tag. It defines a variable. -->
+
+    <p><var>x=y+1</var></p>
+
+
+</body>
+</html>
