@@ -17,3 +17,13 @@ Class 3:
 - Kbd tag
 - var Tag
 - pre Tag
+
+
+Class 4:
+- Progress Tag
+- Meter tag
+- Header Tag
+- Footer Tag
+- Figure Tag
+- FigureCaption Tag
+
