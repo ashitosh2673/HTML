@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Progress Tag -->
+    <!-- 
+      value: 0-100
+      max: 0-100
+      A progress bar is a graphical control element used to visualize the progression of an extended computer operation, such as a download, file transfer, or installation.
+      Sometimes, the graphic is accompanied by a textual representation of the progress in a percent format.
+      Default value of progress bar is 0 and default max value is 1.
+      A progress bar can be used to show a user how far along he/she is in a process.
+      The progress bar can be used in the following scenarios:
+      1. To show the progress of a task that is in progress.
+      2. To show the progress of a task that has not yet started.
+      3. To show the progress of a task that has already ended.
+     -->
+    <progress value="50" max="100"></progress>
+
+    <!-- meter tag -->
+    <!-- 
+        A meter element represents a scalar measurement within a known range, or a fractional value; for example disk usage, the relevance of a query result, or the fraction of a voting population to have selected a particular candidate.
+        - value: The current numeric value that will be represented by the gauge. This must be a non-negative number between the min and max value.
+        - min: The lower numeric bound of the measured range. This must be less than the max value.
+        - max: The upper numeric bound of the measured range. This must be greater than the min value.
+        - low: The upper numeric bound of the low end of the measured range. This must be less than the high value. The default value is the low end of the range (i.e. min).
+        - high: The lower numeric bound of the high end of the measured range. This must be greater than the low value. The default value is the high end of the range (i.e. max).
+        - optimum: The numeric value that is considered to be the "best" value. This must be within the min and max value. The default value is the midpoint between the min and max value.
+        - The text between the <meter> and </meter> tags will only be displayed in browsers that do not support the <meter> element.
+        - Default value is 1.
+        - If the value is less than the low value, the gauge will be low.
+        - If the value is greater than the high value, the gauge will be high.
+        - If the value is between the low and high value, the gauge will be optimum.
+        - It shows the green color if the value is optimum.
+        - It shows the yellow color if the value is low.
+        - It shows the red color if the value is high.
+     -->
+
+    <meter min="0" max="75" value="74" low="25" high="75" optimum="77">
+      50 out of 100
+    </meter>
+
+    <!-- Header Tag -->
+    <!-- 
+      The <header> tag defines a header for a document or a section. A header element represents a group of introductory or navigational aids. It may contain some heading elements but also other elements like a logo, wrapped section's header, a search form, and so on.
+      The <header> element should be used as a container for introductory content or set of navigational links.
+      You can have several <header> elements in one document.
+      Note: A <header> tag cannot be placed within a <footer>, <address> or another <header> element.
+     -->
+    <header>
+      <h1>Header</h1>
+      <p>Some introductory text..</p>
+    </header>
+
+    <!-- Footer Tag -->
+    <!-- 
+      The <footer> tag defines a footer for a document or a section. A footer element represents a footer for its nearest sectioning content or sectioning root element. A footer typically contains information about the author of the section, copyright
+      data or links to related documents.
+      The <footer> element should be used as a container for introductory content or set of navigational links.
+      You can have several <footer> elements in one document.
+      Note: A <footer> tag cannot be placed within a <address> or another <footer> element.
+     -->
+    <footer>
+      <p>Posted by: Hege Refsnes</p>
+      <p>
+        Contact information:
+        <a href="mailto:contact@test.com">contact@test.com</a>
+      </p>
+    </footer>
+
+    <!-- Figure Tag -->
+    <!-- 
+      The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+      While the content of the <figure> element is related to the main flow, its position is independent of the main flow, and if removed it should not affect the flow of the document.
+      Tip: The <figcaption> element is used to add a caption for the <figure> element. The <figcaption> element can be placed as the first or last child of the <figure> element.
+      The <figure> tag also supports the Event Attributes in HTML.
+     -->
+
+    <figure>
+      <img
+        src="img_pulpit.jpg"
+        alt="The Pulpit Rock"
+        width="304"
+        height="228"
+      />
+      <figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>
+    </figure>
+  </body>
+</html>
