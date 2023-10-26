@@ -27,3 +27,15 @@ Class 4:
 - Figure Tag
 - FigureCaption Tag
 
+Class 5:
+- Picture Tag
+- Audio Tag
+- Video Tag
+- Track Tag
+- Dialog Tag
+- Nav Tag
+- Details Taf
+
+
+
+
