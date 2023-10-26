@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class</title>
+    <script>
+      function openDialog() {
+        document.getElementById("dialog").showModal();
+      }
+      function closeDialog() {
+        document.getElementById("dialog").close();
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Picture Tag -->
+
+    <!-- 
+      A picture element contains zero or more source elements and one img element to provide versions of an image for different display/device scenarios.
+      The browser will consider each child <source> element and choose the best match among them; if no matches are found, the URL of the <img> element's src attribute is selected. The selected image is then presented in the space occupied by the <img> element.
+      The <source> element's srcset attribute gives the browser a hint of the image's resolution, so that it can select the best source if the browser must resize the image.
+      The media attrbute specifies the media query of the resource's intended media; this lets the browser select the source based on the media query.
+     -->
+
+    <picture>
+      <source
+        srcset="
+          ./Image/sunflower/pexels-anna-tarazevich-5076425.jpg 1x,
+          ./Image/dogs/pexels-tanika-3687770.jpg               2x
+        "
+        media="(min-width: 1200px)"
+        width="500"
+        height="500"
+      />
+      <source
+        srcset="./Image/dogs/pexels-tanika-3687770.jpg"
+        media="(min-width: 768px)"
+        width="500"
+        height="500"
+      />
+      <source
+        srcset="./Image/cat/photo-1529778873920-4da4926a72c2.avif"
+        media="(min-width: 576px)"
+        width="500"
+        height="500"
+      />
+      <img
+        src="./Image/small/1000-TH-1_AIRCAT-US-IS.jpg"
+        width="500"
+        height="500"
+        alt="Hero Image"
+      />
+    </picture>
+
+    <!-- audio -->
+    <!-- 
+      A audio element represents a sound or audio stream.
+      The audio element can be used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the source element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream.
+      The audio element supports the following audio formats: MP3, WAV, OGG.
+      Below are the attributes of audio tag:
+      controls: It is used to display audio controls like play, pause, etc.
+      autoplay: It is used to play the audio automatically.
+      loop: It is used to play the audio again and again.
+      muted: It is used to mute the audio.
+      preload: It is used to specify if and how the author thinks the audio should be loaded when the page loads.
+      none: It indicates that the audio should not be loaded when the page loads.
+      metadata: It indicates that only audio metadata (e.g. length) is fetched when the page loads.
+      auto: It indicates that the whole audio file can be downloaded, even if the user is not expected to use it.
+      src: It is used to specify the URL of the audio file.
+      type: It is used to specify the type of audio file.
+     -->
+
+    <audio controls muted preload="metadata">
+      <source src="./audio/sample-6s.mp3" type="audio/mpeg" />
+      <source src="./audio/file_example_OOG_1MG.ogg" type="audio/ogg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Video -->
+    <!-- 
+  A video element represents a video player.
+  The video element can be used to embed video content in documents. It may contain one or more video sources, represented using the src attribute or the source element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream.
+  The video element supports the following video formats: MP4, WebM, OGG.
+  Below are the attributes of video tag:
+  controls: It is used to display video controls like play, pause, etc.
+  autoplay: It is used to play the video automatically.
+  loop: It is used to play the video again and again.
+  muted: It is used to mute the video.
+  preload: It is used to specify if and how the author thinks the video should be loaded when the page loads.
+  none: It indicates that the video should not be loaded when the page loads.
+  metadata: It indicates that only video metadata (e.g. length) is fetched when the page loads.
+  auto: It indicates that the whole video file can be downloaded, even if the user is not expected to use it.
+  src: It is used to specify the URL of the video file.
+  type: It is used to specify the type of video file.
+  poster: It is used to specify an image to be shown while the video is downloading, or until the user hits the play button.
+ -->
+
+    <video
+      width="500"
+      height="500"
+      controls
+      muted
+      loop
+      poster="./Image/cat/photo-1529778873920-4da4926a72c2.avif"
+    >
+      <source src="./video/file_example_MP4_640_3MG.mp4" type="video/mp4" />
+      <source src="./video/file_example_OGG_1280_11_4mg.ogg" type="video/ogg" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- track -->
+    <!-- 
+      A track element is used as a child of the media elements audio and video. It lets you specify timed text tracks (or time-based data), for example to automatically handle subtitles. The tracks are formatted in WebVTT format (.vtt files) — Web Video Text Tracks or Timed Text Markup Language (TTML).
+      The track element is used to specify subtitles, caption files or other files containing text, that should be visible when the media is playing.
+      Below are the attributes of track tag:
+      default: It is used to specify that the track is to be enabled if the user's preferences do not indicate that another track would be more appropriate.
+      kind: It is used to specify how the text track is meant to be used.
+      subtitles: It indicates that the track should be used for subtitles and captions.
+      captions: It indicates that the track should be used for subtitles and captions.
+      descriptions: It indicates that the track should be used for descriptions.
+      chapters: It indicates that the track should be used for chapter titles.
+      metadata: It indicates that the track should be used for metadata (e.g. table of contents).
+      src: It is used to specify the URL of the track file.
+      srclang: It is used to specify the language of the track text data.
+      label: It is used to specify the title of the text track. 
+     -->
+
+    <video width="500" height="500" controls>
+      <source src="./video/file_example_MP4_640_3MG.mp4" type="video/mp4" />
+      <source src="./video/file_example_OGG_1280_11_4mg.ogg" type="video/ogg" />
+      <track
+        src="./subtitles/sample.vtt"
+        default
+        kind="subtitles"
+        srclang="hi"
+        label="Hindi"
+      />
+      <track
+        src="./subtitles/sample.vtt"
+        default
+        kind="subtitles"
+        srclang="en"
+        label="English"
+      />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Nav Tag -->
+
+    <!-- 
+      A nav element represents a section of a page that links to other pages or to parts within the page: a section with navigation links.
+      The nav element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.
+     -->
+
+    <nav style="padding: 10px; background-color: green">
+      <a style="text-decoration: none; color: white; margin: 8px" href="#"
+        >Home</a
+      >
+      |
+      <a style="text-decoration: none; color: white; margin: 8px" href="#"
+        >About</a
+      >
+      |
+      <a style="text-decoration: none; color: white; margin: 8px" href="#"
+        >Services</a
+      >
+      |
+      <a style="text-decoration: none; color: white; margin: 8px" href="#"
+        >Contact</a
+      >
+    </nav>
+
+    <!-- Dialog Tag -->
+    <!-- 
+      Dialog element represents a dialog box or other interactive component, such as an inspector or window.
+      The dialog element represents a part of an application that a user interacts with to perform a task, for example a dialog box, inspector, or window.
+      The dialog element is not supported in Internet Explorer.
+      attributes of dialog tag:
+      open: It is used to specify that the dialog is active and that the user can interact with it.
+     -->
+
+    <button id="open" onclick="openDialog()">Open Dialog</button>
+    <dialog id="dialog">
+      <p>Hello World</p>
+      <img
+        width="500"
+        height="500"
+        src="./Image/cat/photo-1529778873920-4da4926a72c2.avif"
+      />
+      <button id="close" onclick="closeDialog()">Close Dialog</button>
+    </dialog>
+
+    <!-- Details -->
+    <!-- 
+      A details element represents a disclosure widget from which the user can obtain additional information or controls.
+      A Summary element represents a summary, caption, or legend for a details element's disclosure box.
+      open: It is used to specify that the details should be visible (open) to the user.
+     -->
+
+    <details open style="margin-left: 50px;">
+      <summary>Click to see the details</summary>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem velit similique sed excepturi, nobis voluptate aperiam ad id magni ducimus maiores deleniti dicta libero fuga eligendi minus hic architecto suscipit?</p>
+  </body>
+</html>
