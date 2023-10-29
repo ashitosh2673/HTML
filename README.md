@@ -36,6 +36,10 @@ Class 5:
 - Nav Tag
 - Details Tag
 
-
-
+Class 6 : 
+- Article Tag
+- Aside Tag
+- Map Tag
+- Svg Tag
+- iframe Tag
 
