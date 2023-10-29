@@ -34,7 +34,7 @@ Class 5:
 - Track Tag
 - Dialog Tag
 - Nav Tag
-- Details Taf
+- Details Tag
 
 
 
