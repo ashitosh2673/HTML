@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 6</title>
+  </head>
+  <body>
+    <h2
+      style="
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        padding: 8px;
+        background-color: aquamarine;
+      "
+    >
+      Class 6
+    </h2>
+
+    <!-- Article Tag -->
+    <!-- 
+        A article element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication).
+        This could be a forum post, a magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.
+     -->
+    <article>
+      <h1>Article Title</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        voluptatum, quibusdam, voluptate, quia voluptas quod quos exercitationem
+        voluptatibus quas quidem doloribus. Quisquam voluptatum, quibusdam,
+        voluptate, quia voluptas quod quos exercitationem voluptatibus quas
+        quidem doloribus.
+      </p>
+    </article>
+
+    <!-- Aside Tag -->
+    <!-- 
+        The aside element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content. Such sections are often represented as sidebars in printed typography.
+     -->
+    <aside>
+      <h1>Aside Title</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        voluptatum, quibusdam, voluptate, quia voluptas quod quos exercitationem
+        voluptatibus quas quidem doloribus. Quisquam voluptatum, quibusdam,
+        voluptate, quia voluptas quod quos exercitationem voluptatibus quas
+        quidem doloribus.
+      </p>
+    </aside>
+
+    <!-- Map Tag -->
+    <!-- 
+        A map element is used with area elements to define an image map (a clickable link area).
+        The map element contains a number of area elements, that defines the clickable areas in the image map.
+        The map element is always used in conjunction with the img element's usemap attribute, the value of which must match the id attribute of the map element.
+        Atrributes:
+            name: Specifies the name of an image map to reference later.
+        Area tag attributes:
+            shape: Specifies the shape of an area element.
+            - rect: Defines a rectangular region.
+            - circle: Defines a circular region.
+            - poly: Defines a polygonal region.
+            - line: Defines a linear region.
+            coords: Specifies the coordinates of the area.
+            alt: Specifies an alternate text for the area.
+            href: Specifies the URL of the page the link goes to.
+            target: Specifies where to open the linked document.  
+     -->
+    <img
+      src="./Image/small/1000-TH-1_AIRCAT-US-IS.jpg"
+      alt="Hero Image"
+      usemap="#workmap"
+      width="500"
+      height="500"
+      style="border: 1px solid red"
+    />
+    <map name="workmap">
+      <!-- <area
+        shape="rect"
+        coords="30,30,100,100"
+        alt="Computer"
+        href="computer.htm"
+        target="_blank"
+      />
+      <area
+        shape="rect"
+        coords="200,200,300,300"
+        alt="Phone"
+        href="phone.htm"
+      /> -->
+      <area
+        shape="circle"
+        coords="337,300,44"
+        alt="Cup of coffee"
+        href="coffee.htm"
+      />
+    </map>
+
+    <!-- Svg Tag -->
+    <!-- 
+        A svg element is a container used to group other svg elements.
+        circle: Defines a circle.
+        rect: Defines a rectangle.
+        polygon: Defines a polygon.
+        polyline: Defines a polyline.
+        path: Defines a path.
+     -->
+    <svg width="100" height="100">
+      <circle
+        cx="50"
+        cy="50"
+        r="40"
+        stroke="green"
+        stroke-width="15"
+        fill="yellow"
+      />
+      <rect
+        x="15"
+        y="15"
+        width="70"
+        height="70"
+        stroke="red"
+        stroke-width="5"
+        fill="blue"
+      />
+    </svg>
+
+    <svg width="100" height="100">
+      <polygon
+        points="50,0 20,100 100,30 0,30 80,100 20,10"
+        style="fill: lime; stroke: purple; stroke-width: 1"
+      />
+      <line x1="0" y1="0" x2="100" y2="100" style="stroke: rgb(255, 0, 0)" />
+    </svg>
+
+    <!-- iframe tag -->
+    <!-- 
+        An iframe is used to display a web page within a web page.
+        The src attribute specifies the URL (web address) of the inline frame page.
+        The width and height attributes specify the size of the iframe.
+        The frameborder attribute specifies whether or not to display a border around the iframe.
+        The seamless attribute specifies that the iframe should look like it is a part of the containing document.
+        allowfullscreen: It is used to allow the iframe to be displayed in fullscreen mode.
+        allow: It is used to specify a set of extra restrictions on the content that can appear in the inline frame.
+ -->
+
+    <iframe
+      src="https://itshaala.com/"
+      title="Test 123454"
+      frameborder="0"
+      allowfullscreen
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      width="400px"
+      height="500px"
+    ></iframe>
+  </body>
+</html>
