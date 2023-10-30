@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./CSS/css1.css" />
+
+    <!-- Internal CSS -->
+    <style>
+      div {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CSS -->
+    <!-- 
+        CSS is a language that describes the style of an HTML document.
+        CSS describes how HTML elements should be displayed.
+
+        CSS stands for Cascading Style Sheets.
+        CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+     -->
+
+    <!-- CSS History -->
+    <!-- 
+        CSS was first proposed by Håkon Wium Lie on October 10, 1994.
+        At the time, Lie was working with Tim Berners-Lee at CERN.
+        Several other style sheet languages for the web were proposed around the same time, and discussions on public mailing lists and inside World Wide Web Consortium resulted in the first W3C CSS Recommendation, a W3C Proposed Recommendation for CSS level 1 on December 17, 1996.
+        CSS level 2 was developed by the W3C and published as a recommendation in May 1998.
+        CSS level 3, which was started in 1998, became an official W3C recommendation in June 2011.
+        CSS level 4 is currently being developed.
+      -->
+
+    <!-- CSS Syntax -->
+    <!-- 
+            A CSS rule-set consists of a selector and a declaration block:
+
+            Selector {
+                property: value;
+                property: value;
+                ...
+            }
+
+            The selector points to the HTML element you want to style.
+            The declaration block contains one or more declarations separated by semicolons.
+            Each declaration includes a CSS property name and a value, separated by a colon.
+            A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.
+         -->
+    <!-- Example:
+        div {
+            color: red;
+            font-size: 20px;
+        } -->
+
+    <!-- 
+            External CSS
+            With an external style sheet, you can change the look of an entire website by changing just one file!
+            We can use the link tag to link the external CSS file to the HTML file.
+            The link tag goes inside the head tag. 
+         -->
+
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+      consequuntur dolor quia cum! Exercitationem dolor iste, quas reprehenderit
+      facilis similique, consequuntur aliquam quidem, eos odit repellat quis?
+      Mollitia, vero at?
+    </div>
+
+    <!-- Internal CSS -->
+    <!-- 
+            An internal style sheet may be used if one single HTML page has a unique style.
+            The internal style is defined inside the style tag in the head section.
+            Example : 
+                <head>
+                    <style>
+                        body {
+                            background-color: linen;
+                        }
+
+                        h1 {
+                            color: maroon;
+                            margin-left: 40px;
+                        }
+                    </style>
+                </head>
+         -->
+    <div name="internal-css">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione esse
+        dolores iusto animi, molestiae quae neque in quas. Minus repudiandae
+        omnis recusandae optio veniam cupiditate fugit exercitationem pariatur
+        voluptate dolorum.
+      </p>
+    </div>
+
+    <!-- Inline CSS -->
+    <!-- 
+    Inline styles are defined within the "style" attribute of the relevant element.
+    Inline styles affect only the element to which they are applied.
+    Inline styles has the highest priority, which means that it will override styles defined inside the <style> tag or in an external style sheet, and will override all except the style defined by !important.
+        Example:
+            <p style="color: red; margin-left: 20px;">This is a paragraph.</p>
+ -->
+    <div class="para-test">
+      <!-- <p style="background-color: green"> -->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione esse
+      dolores iusto animi, molestiae quae neque in quas. Minus repudiandae omnis
+      recusandae optio veniam cupiditate fugit exercitationem pariatur voluptate
+      dolorum.
+      <!-- </p> -->
+    </div>
+
+    <!-- Selectors in CSS -->
+
+    <!-- Element Selector -->
+    <!--  Element Selector is used to select the HTML element and apply the style to it. 
+
+        Syntax: 
+            element {
+                property: value;
+            }
+
+            Example:
+                div {
+                    color: red;
+                }
+      -->
+
+    <!-- Class Selector -->
+    <!-- 
+        Class Selector is used to select the HTML element with the class attribute and apply the style to it.
+        We can use . to select the class.
+        Example:
+            .class-name {
+                property: value;
+            }
+     -->
+
+    <p class="para-test">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptas
+      debitis dolorem vero vel, porro dolores consequuntur alias voluptatibus
+      obcaecati ea ab reiciendis, ex animi amet, consequatur culpa sint dolor.
+    </p>
+
+    <!-- Id Selected -->
+    <!-- 
+        Id Selector is used to select the HTML element with the id attribute and apply the style to it.
+        We can use # to select the id.
+        Example:
+            #id-name {
+                property: value;
+            }
+     -->
+
+    <p id="para-id-test">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptas
+      debitis dolorem vero vel, porro dolores consequuntur alias voluptatibus
+      obcaecati ea ab reiciendis, ex animi amet, consequatur culpa sint dolor.
+    </p>
+
+    <!-- 
+        Universal Selector
+        The universal selector (*) selects all HTML elements on the page.
+        The universal selector can be used to set styles for the entire page, for example to set a background color for the page.
+        Example:
+            * {
+                property: value;
+            }
+
+            Actual Exmaple:
+            # {
+                backjground-color: red;
+            }
+     -->
+    <!-- Grouping Selector -->
+    <!-- 
+        Grouping Selector is used to select the HTML element and apply the style to it.
+        We can use , to select the class, id, element or any combination of it.
+        Example:
+            .class-name, #id-name {
+                property: value;
+            }
+
+            Actual Example:
+            .para-test, #para-id-test {
+                background-color: red;
+            }
+     -->
+    <p class="test-group">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti id
+      voluptatibus quisquam nam nulla! Molestias, sit accusamus? Praesentium
+      possimus at error dolore laudantium esse rerum alias accusamus, magnam ad
+      iusto.
+    </p>
+    <div>
+      <p class="test-group2">Test for para</p>
+    </div>
+
+    <!-- Attribute Selector -->
+    <!-- 
+    A CSS attribute selector matches elements based on the presence or value of a given attribute.
+    Example:
+        [attribute] {
+            property: value;
+        }
+
+        Actual Example:
+        a[href="www.google.com"] {
+            background-color: red;
+        }
+ -->
+    <a href="www.google.com">Click here for google link</a>
+    <a href="www.facebook.com">Click here for facebook link</a>
+    <a href="#">Click here for # link</a>
+  </body>
+</html>
