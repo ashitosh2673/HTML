@@ -43,3 +43,23 @@ Class 6 :
 - Svg Tag
 - iframe Tag
 
+Class 7:
+Files : 
+class7.html , css1.css
+- What is CSS
+- History of CSS
+- Syntax of CSS
+- Different type of CSS
+  - External CSS
+  - Internal CSS
+  - Inline CSS
+- CSS Selectors
+
+
+
+
+
+
+
+
+
