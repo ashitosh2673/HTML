@@ -1,0 +1,44 @@
+/* element selector */
+div {
+  background-color: red;
+}
+
+/* class selector */
+.para-test {
+  background-color: blue;
+}
+
+/* id selector */
+#para-id-test {
+  background-color: green;
+}
+
+/* Universal Selector */
+* {
+  color: white;
+  background-color: black;
+}
+
+/* Grouping Selector */
+.test-group,
+.test-group2 {
+  background-color: yellow;
+  font-size: 20px;
+  color: black;
+}
+
+/* .test-group2 {
+  font-size: 20px;
+  background-color: yellow;
+  color: black;
+} */
+
+/* Attribute Selector */
+
+a[href="www.google.com"] {
+  color: red;
+}
+
+p[class="test-group2"] {
+  color: blue;
+}
