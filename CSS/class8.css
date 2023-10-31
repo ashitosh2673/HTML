@@ -1,0 +1,66 @@
+/* 
+ */
+
+/* p[name~="test"] {
+  color: blue;
+} */
+
+/* p[name|="test"] {
+  color: blue;
+}
+
+p[name^="test"] {
+  color: red;
+}
+
+p[name$="test"] {
+  color: green;
+} */
+
+/* p[name*="test"] {
+  color: yellow; */
+/* } */
+
+/*
+Psuedo Classes 
+ */
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: rgb(255, 0, 179);
+}
+
+a:hover {
+  color: rgb(0, 87, 128);
+}
+
+a:active {
+  color: yellow;
+}
+
+div:first-child {
+  color: red;
+}
+
+input:disabled {
+  background-color: lightgray;
+}
+
+/* Psuedo Elements */
+
+/* p::after {
+  content: url("./../Image/cat/photo-1529778873920-4da4926a72c2.avif"); 
+  color: red;
+} */
+
+p::selection {
+  color: yellowgreen;
+}
+
+/* li::marker {
+  content: "hi";
+  color: red;
+} */
