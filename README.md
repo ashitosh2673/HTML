@@ -57,6 +57,14 @@ class7.html , css1.css
 
 
 
+Class 8:
+Files : class8.html and class8.css
+- Attributes Selectors 
+- Psuedo Classes
+- Pseudo Elements
+
+
+
 
 
 
