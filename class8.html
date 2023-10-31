@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 8</title>
+    <link rel="stylesheet" href="./CSS/class8.css" />
+  </head>
+  <body>
+    <!-- Attributes Selector -->
+    <!-- 
+            Selects all elements with a specific attribute
+            Example:
+                [name] {
+                    background-color: red;
+                }
+
+            Selects all elements with a specific attribute, with a specific value
+
+            Example:
+                [name="testpara"] {
+                    background-color: red;
+                }
+
+            Selects all elements with a specific attribute, with a value containing a specified word
+
+            Example:
+                [name~="test"] {
+                    background-color: red;
+                }
+            
+            Selects all elements with a specific attribute, with a value containing a specified value
+
+            Example:
+                [name|="test"] {
+                    background-color: red;
+                }
+            
+            Selects all elements with a specific attribute, with a value followed by a hyphen (-)
+
+            Example:
+                [name^="test"] {
+                    background-color: red;
+                }
+            
+            Selects all elements with a specific attribute, with a value start with a specific value
+
+            Example:
+                [name$="para"] {
+                    background-color: red;
+                }
+            
+            Selects all elements with a specific attribute, with a value ending with a specific value
+
+            Example:
+                [name*="test"] {
+                    background-color: red;
+                }
+
+            Selects all elements with a specific attribute, with a value containing a specified value
+    -->
+    <div>
+      <div><span>Test for child</span></div>
+      <p name="para testpara">Attributes Selector</p>
+      <p name="testpara">This is a paragraph.</p>
+      <p name="test-para">This is another paragraph.</p>
+      <p name="test para">This is a third paragraph.</p>
+      <p name="para test">This is a forth paragraph.</p>
+      <p name="paratestpara">This is a fifth paragraph.</p>
+    </div>
+
+    <!-- Pseudo-classes -->
+    <!-- 
+            A pseudo-class is used to define a special state of an element.
+            Example:
+                a:hover {
+                    background-color: red;
+                }   
+
+            Pseudo-classes can be combined with CSS classes:
+            Example:
+                a.test:hover {
+                    background-color: red;
+                }
+
+            Pseudo-classes can be combined with CSS id:
+            Example:
+                #test:hover {
+                    background-color: red;
+                }
+
+            There are some example of pseudo class those are as follows:
+                :active
+                :checked
+                :disabled
+                :empty
+                :enabled
+                :first-child
+                :first-of-type
+                :focus
+                :hover
+                :in-range
+                :invalid
+                :lang(language)
+                :last-child
+                :last-of-type
+                :link
+                :not(selector)
+                :nth-child(n)
+                :nth-last-child(n)
+                :nth-last-of-type(n)
+                :nth-of-type(n)
+                :only-of-type
+                :only-child
+                :optional
+                :out-of-range
+                :read-only
+                :read-write
+                :required
+                :root
+                :target
+                :valid
+                :visited
+     -->
+    <ol>
+      <li>
+        <a href="https://www.w3schools.com/css/css_pseudo_classes.asp"
+          >Pseudo-classes</a
+        >
+      </li>
+      <li>
+        <a href="https://www.w3schools.com/css/css_pseudo_elements.asp"
+          >Pseudo-elements</a
+        >
+      </li>
+    </ol>
+
+    <input type="text" name="test" id="test" disabled />
+
+    <!-- Pseudo-elements -->
+    <!-- 
+            A CSS pseudo-element is used to style specified parts of an element.
+            Example:
+                p::first-line {
+                    color: red;
+                }
+
+            Pseudo-elements can be combined with CSS classes:
+            Example:
+                p.test::first-line {
+                    color: red;
+                }
+
+            Pseudo-elements can be combined with CSS id:
+            Example:
+                p#test::first-line {
+                    color: red;
+                }
+
+            There are some example of pseudo element those are as follows:
+                ::after : to apply some styling after the content of each selected element.
+                ::before : to insert something before the content of each selected element.
+                ::first-letter : to apply some styling on the first letter of the content of each selected element.
+                ::first-line : to apply some styling on the first line of the content of each selected element.
+                ::selection : to apply some styling on the selected text.
+                ::marker : to apply some styling on the list item marker of each selected element.
+     -->
+    <p>My Name is IT Shaala</p>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam autem,
+      ut, odit incidunt doloremque architecto pariatur dolor quaerat sit, ipsum
+      repudiandae quis sint eos culpa laborum soluta mollitia perferendis nemo!
+    </p>
+
+    <ul>
+      <li>Test 1</li>
+      <li>Test 2</li>
+      <li>Test 3</li>
+      <li>Test 4</li>
+    </ul>
+  </body>
+</html>
