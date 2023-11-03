@@ -63,6 +63,15 @@ Files : class8.html and class8.css
 - Psuedo Classes
 - Pseudo Elements
 
+Class 9:
+Files: class9.html & class9.css
+- Combinator Selectors
+- Box Model
+- CSS Colors
+- CSS Margin
+
+
+
 
 
 
